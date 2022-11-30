@@ -1,116 +1,29 @@
-public class Address {
+public class Address extends AbstractAddress{
 
-    private static final String URL = "./tmp/out.xlsx";
+    String county; //powiat
 
-    public Address() {}
-
-    public Address(String streetName, Integer numberBuilding, String localNumber, String postCode, String city) {
-        this.streetName = streetName;
-        this.numberBuilding = numberBuilding;
-        this.localNumber = localNumber;
-        this.postCode = postCode;
-        this.city = city;
+    public Address(String county) {
+        this.county = county;
     }
 
-    public Address(String streetName, Integer numberBuilding, String localNumber, String postCode, String city, String country) {
-        this.streetName = streetName;
-        this.numberBuilding = numberBuilding;
-        this.localNumber = localNumber;
-        this.postCode = postCode;
-        this.city = city;
-        this.country = country;
+    public Address(String county, String city, String streetName, Integer buildingNumber, String localNumber, String postCode) {
+        this.county = county;
+        super.city = city;
+        super.streetName = streetName;
+        super.buildingNumber = buildingNumber;
+        super.localNumber = localNumber;
+        super.postCode = postCode;
     }
 
-    private String streetName;
-    private Integer numberBuilding;
-    private String localNumber;
-    private String postCode;
-    private String city;
-    private String country = "Poland";
 
-    protected Long numberOfCitizens;
-
-    public Long numberOfParkingPlaces;
-
-    public Long getAllParkingPlaces() {
-        Long numberOfGaragePlaces = 10L;
-        return numberOfParkingPlaces + numberOfGaragePlaces;
+    public void showCountyName() {
+        System.out.println("Posiadam: " + this.county);
     }
 
-    public String getStreetName() {
-
-        return streetName;
-    }
-
-    public void setStreetName(String streetName) {
-        this.streetName = streetName;
-    }
-
-    public Integer getNumberBuilding() {
-        return numberBuilding;
-    }
-
-    public void setNumberBuilding(Integer numberBuilding) {
-        this.numberBuilding = numberBuilding;
-    }
-
-    public String getLocalNumber() {
-        return localNumber;
-    }
-
-    public void setLocalNumber(String localNumber) {
-        this.localNumber = localNumber;
-    }
-
-    public String getPostCode() {
-        return postCode;
-    }
-
-    public void setPostCode(String postCode) {
-        this.postCode = postCode;
-    }
-
-    private String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getCityName() {
-        return getCity().toUpperCase();
-    }
-
-    public Long getNumberOfCitizens() {
-        return numberOfCitizens;
-    }
-
-    public void setNumberOfCitizens(Long numberOfCitizens) {
-        this.numberOfCitizens = numberOfCitizens;
-    }
-
-    public Long getNumberOfParkingPlaces() {
-        return numberOfParkingPlaces;
-    }
-
-    public void setNumberOfParkingPlaces(Long numberOfParkingPlaces) {
-        this.numberOfParkingPlaces = numberOfParkingPlaces;
-    }
+    String getSomethig() { return this.city; };
 
     @Override
-    public String toString() {
-        return "Address{ Ul. " + streetName + " " + numberBuilding + "/" + localNumber + '\'' +
-                postCode + city + '\'' +
-                country + '\'' +
-                '}';
+    String getStreetWithNumbers() {
+        return streetName + " " + buildingNumber + "/ " + localNumber;
     }
 }
