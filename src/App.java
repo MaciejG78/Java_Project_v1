@@ -1,15 +1,53 @@
+import conditionals.ChristmasTree;
+
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
 
-        ConditionsStatements conditionsStatements = new ConditionsStatements();
+//        Dom dom1 = new Dom(10.65, 6);
+//        Dom dom2 = new Dom(5.05, 3);
+//
+//
+//        String kolor1 = dom1.pomaluj("Biały");
+//        System.out.println(kolor1);
+//
+//        System.out.println(dom2.pomaluj("Czerwony"));
+//
+//        Integer nowyWymiarDomu1 = dom1.rozbudujDom(10);
+//        Integer nowyWymiarDomu2 = dom2.iloscPomieszczen;
+//
+//        System.out.println(nowyWymiarDomu1);
+//        System.out.println(nowyWymiarDomu2);
 
-        System.out.println(conditionsStatements.comparingIfXBiggerThanY(10, 10));
 
-        System.out.println(conditionsStatements.comparingShortIfXBiggerThanY(50, 10));
-        System.out.println(conditionsStatements.comparingShortIfXBiggerThanY(5, 10));
-        System.out.println(conditionsStatements.comparingShortIfXBiggerThanY(50, 50));
+//        BMI bmi = new BMI();
+//        bmi.calculateBMI();
+//        bmi.showDocumentType(DocumentType.PODANIE);
+//        bmi.forLoop(10);
 
+/*
+Podaj ilość poziomów drzewka wysokość: 5
+   *
+  ***
+ *****
+*******
+  ***
+ */
+        ChristmasTree christmasTree = new ChristmasTree();
+        christmasTree.christmasTree();
+
+
+
+//        ConditionsStatements conditionsStatements = new ConditionsStatements();
+//
+//        System.out.println(conditionsStatements.comparingIfXBiggerThanY(10, 10));
+//
+//        System.out.println(conditionsStatements.comparingShortIfXBiggerThanY(50, 10));
+//        System.out.println(conditionsStatements.comparingShortIfXBiggerThanY(5, 10));
+//        System.out.println(conditionsStatements.comparingShortIfXBiggerThanY(50, 50));
+//
 
 
 
