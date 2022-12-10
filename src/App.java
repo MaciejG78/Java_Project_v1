@@ -1,10 +1,11 @@
-import conditionals.ChristmasTree;
-
-import java.util.Scanner;
+import conditionals.Rectangle;
 
 public class App {
 
     public static void main(String[] args) {
+
+        Rectangle rectangle = new Rectangle();
+        rectangle.rectangleMethod(4, 6);
 
 //        Dom dom1 = new Dom(10.65, 6);
 //        Dom dom2 = new Dom(5.05, 3);
@@ -35,8 +36,8 @@ Podaj ilość poziomów drzewka wysokość: 5
 *******
   ***
  */
-        ChristmasTree christmasTree = new ChristmasTree();
-        christmasTree.christmasTree();
+//        ChristmasTree christmasTree = new ChristmasTree();
+//        christmasTree.christmasTree();
 
 
 
