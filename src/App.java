@@ -1,20 +1,27 @@
-import conditionals.Rectangle;
+import java.util.List;
 
 public class App {
 
     public static void main(String[] args) {
 
-        Rectangle rectangle = new Rectangle();
-        rectangle.rectangleMethod(4, 6);
+        Dom dom = new Dom(10.05, 5,
+                List.of(new Okno(2, false, 2, false),
+                        new Okno(3, false, 2, false)),
+                List.of(new Okno(4, false, 1, true)));
 
-//        Dom dom1 = new Dom(10.65, 6);
-//        Dom dom2 = new Dom(5.05, 3);
-//
-//
-//        String kolor1 = dom1.pomaluj("Biały");
-//        System.out.println(kolor1);
-//
-//        System.out.println(dom2.pomaluj("Czerwony"));
+        List<Okno> listaOkien = dom.listaOkien;
+        List<Okno> listaOkienDachowych = dom.listaOkienDachowych;
+
+        System.out.println(dom.listaOkien.get(0).czySzprosy);
+
+        Dom dom1 = new Dom(10.65, 6);
+        Dom dom2 = new Dom(5.05, 3);
+
+
+        String kolor1 = dom1.paint("Biały");
+        System.out.println(kolor1);
+
+        System.out.println(dom2.paint("Czerwony"));
 //
 //        Integer nowyWymiarDomu1 = dom1.rozbudujDom(10);
 //        Integer nowyWymiarDomu2 = dom2.iloscPomieszczen;
