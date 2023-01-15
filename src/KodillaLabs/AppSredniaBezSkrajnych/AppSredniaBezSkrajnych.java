@@ -34,8 +34,8 @@ public class AppSredniaBezSkrajnych {
         Book book1 = new Book("Przygody Tomka Sawyera", 2004);
         Book book2 = new Book("Mikołajek i przyjaciele", 2010);
         Book book3 = new Book("W pustyni i w puszczy", 2009);
-        Book book4 = new Book("Krzyżacy", 2015);
-        Book book5 = new Book("Ogniem i mieczem", 2015);
+        Book book4 = new Book("Krzyżacy", 2000);
+        Book book5 = new Book("Ogniem i mieczem", 1980);
         Book book6 = new Book("Pan Tadeusz", 1996);
 
         LinkedList<Book> bookList = new LinkedList<>(Arrays.asList(book1, book2, book3, book4, book5, book6));
@@ -85,6 +85,7 @@ class Book {
     }
 
     public void showBooksAfter2000(LinkedList<Book> bookList) {
+        System.out.println("Książki których rok wydania jest nie miniejszy niż 2000;");
         for (int i=0; i < bookList.size(); i++) {
             if (bookList.get(i).publicationYear >= 2000) {
                 System.out.println(bookList.get(i).toString());
