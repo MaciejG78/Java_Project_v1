@@ -1,9 +1,7 @@
 package KodillaLabs.AppSredniaBezSkrajnych;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
+import java.util.*;
 /*
 Zadanie:Średnia bez skrajnych ocen oraz lista obiektów Book
         Zadanie składa się z dwóch części – jedna dotyczy ArrayList,a druga LinkedList.
@@ -38,7 +36,19 @@ public class AppSredniaBezSkrajnych {
         Book book5 = new Book("Ogniem i mieczem", 1980);
         Book book6 = new Book("Pan Tadeusz", 1996);
 
-        LinkedList<Book> bookList = new LinkedList<>(Arrays.asList(book1, book2, book3, book4, book5, book6));
+//        LinkedList<Book> bookList = new LinkedList<>(Arrays.asList(book1, book2, book3, book4, book5, book6));
+
+        LinkedList<Book> bookList = new LinkedList<>();
+        bookList.add(book1);
+        bookList.add(book2);
+        bookList.add(book3);
+        bookList.add(book4);
+        bookList.add(book5);
+        bookList.add(book6);
+
+//        List<Book> bookList2 = new LinkedList<>(Arrays.asList(book1, book2, book3, book4, book5, book6));
+//
+//        Collection<Book> bookList3 = new LinkedList<>(Arrays.asList(book1, book2, book3, book4, book5, book6));
 
         Book book = new Book();
         book.showBooksAfter2000(bookList);
@@ -85,10 +95,12 @@ class Book {
     }
 
     public void showBooksAfter2000(LinkedList<Book> bookList) {
-        System.out.println("Książki których rok wydania jest nie miniejszy niż 2000;");
+        System.out.println("Książki których rok wydania jest nie miniejszy niż 2000:");
         for (int i=0; i < bookList.size(); i++) {
             if (bookList.get(i).publicationYear >= 2000) {
-                System.out.println(bookList.get(i).toString());
+//                System.out.println(bookList.get(i).toString());
+                System.out.println("Tytuł: " + bookList.get(i).title + ", rok wydania: " + bookList.get(i).publicationYear);
+
             }
         }
     }
