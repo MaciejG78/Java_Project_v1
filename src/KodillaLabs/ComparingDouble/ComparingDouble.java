@@ -7,9 +7,11 @@ public class ComparingDouble {
         double b = 41.67864322;
 
         System.out.println("Compare to 3 decimal places: " + a + " = " + b + " => " + compare(a , b));
+        System.out.println("Test");
     }
 
     public static boolean compare(double a, double b) {
         return (Math.floor((a*1000)/1) == Math.floor((b*1000)/1));
     }
+
 }
