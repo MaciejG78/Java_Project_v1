@@ -1,4 +1,4 @@
-package KodillaLabs.AppListVsSet;
+package Labs.AppListVsSet;
 
 import java.util.ArrayList;
 import java.util.HashSet;
