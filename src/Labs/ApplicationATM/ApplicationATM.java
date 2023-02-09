@@ -1,4 +1,4 @@
-package KodillaLabs.ApplicationATM;/*Zadanie: bankomat
+package Labs.ApplicationATM;/*Zadanie: bankomat
 Stwórz interfejs obsługujący bankomat (ang. ATM) zawierający:
 Dwie metody wymagające implementacji – wpłata i wypłata
 Metodę domyślną – informację o połączeniu z bankiem

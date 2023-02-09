@@ -1,4 +1,4 @@
-package KodillaLabs.ApplicationBankomat;/*
+package Labs.ApplicationBankomat;/*
 Zadanie:transakcja bankowa
 Aby przećwiczyć wykorzystywanie klas abstrakcyjnych w praktyce, stwórz swoje własne zachowanie dla transakcji bankowej.
 Załóżmy, że transakcja bankowa zawiera się w 8 metodach, z czego 3 są zawsze po stronie banku (w klasie abstrakcyjnej).
