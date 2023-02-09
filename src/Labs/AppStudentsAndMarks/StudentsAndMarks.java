@@ -1,4 +1,4 @@
-package KodillaLabs.AppStudentsAndMarks;
+package Labs.AppStudentsAndMarks;
 
 import java.util.*;
 
