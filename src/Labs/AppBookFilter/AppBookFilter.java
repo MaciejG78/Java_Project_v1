@@ -1,4 +1,4 @@
-package KodillaLabs.AppBookFilter;
+package Labs.AppBookFilter;
 
 import java.util.HashSet;
 import java.util.List;
