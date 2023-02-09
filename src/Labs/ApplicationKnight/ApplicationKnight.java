@@ -1,4 +1,4 @@
-package KodillaLabs.ApplicationKnight;/* Przed tobą nietypowe zadanie. Tym razem twoim celem będzie napisanie programu,
+package Labs.ApplicationKnight;/* Przed tobą nietypowe zadanie. Tym razem twoim celem będzie napisanie programu,
 który wyświetla informację o wykonaniu określonych zadań (ang. quest) przez pewnego
 rycerza (knight). W tym celu w swojej aplikacji stwórz następujące elementy programu:
 
