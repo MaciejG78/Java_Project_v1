@@ -1,4 +1,4 @@
-package KodillaLabs.AppSrednia;
+package Labs.AppSrednia;
 
 public class AppSrednia {
 

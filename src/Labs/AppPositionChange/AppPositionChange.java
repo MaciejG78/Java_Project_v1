@@ -1,4 +1,4 @@
-package KodillaLabs.AppPositionChange;
+package Labs.AppPositionChange;
 
 public class AppPositionChange {
 
