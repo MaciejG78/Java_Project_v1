@@ -1,4 +1,4 @@
-package KodillaLabs.ComparingDouble;
+package Labs.ComparingDouble;
 
 public class ComparingDouble {
 

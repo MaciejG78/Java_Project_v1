@@ -1,4 +1,4 @@
-package KodillaLabs.AppWrappers;
+package Labs.AppWrappers;
 
 //        Wrapper typowi podstawowemu (nie)równy?
 //        Napisz program przypisujący jakieś wartości do zmiennych o typach podstawowych.
