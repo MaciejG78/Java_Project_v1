@@ -1,4 +1,4 @@
-package KodillaLabs.AppJoin;
+package Labs.AppJoin;
 
 import java.util.ArrayList;
 import java.util.List;
