@@ -1,4 +1,4 @@
-package KodillaLabs.AppSredniaBezSkrajnych;
+package Labs.AppSredniaBezSkrajnych;
 
 
 import java.util.*;
