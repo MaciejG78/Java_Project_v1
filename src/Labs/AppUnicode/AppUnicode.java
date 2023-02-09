@@ -1,4 +1,4 @@
-package KodillaLabs.AppUnicode;
+package Labs.AppUnicode;
 
 public class AppUnicode {
 
