@@ -2,5 +2,8 @@ package Labs.AppStreamBeautifier;
 
 public class PoemBeautifier {
 
-//    public String beautify() {}
+    public void beautify(String text, PoemDecorator poemDecorator) {
+        System.out.println(text);
+        System.out.println(poemDecorator.decorate());
+    }
 }

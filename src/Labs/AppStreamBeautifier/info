@@ -2,7 +2,7 @@ Zadanie: upiększacz tekstów
 Przygotowanie:Utwórz pakiet
 com.kodilla.stream.beautifier w katalogu src/main/java.
 W tym pakiecie stwórz interfejs PoemDecorator zawierający metodę decorate odpowiedzialną za ozdobienie
-tekstu przekazanego jako parametr. Stwórz klasę PoemBeautifier posaidającą metodę beautify,
+tekstu przekazanego jako parametr. Stwórz klasę PoemBeautifier posiadającą metodę beautify,
 której jako parametry będzie można przekazać tekst do upiększenia oraz wyrażenie lambda upiększające tekst.
 Wykonanie zadania:
 W metodzie main(String[] args) klasy StreamMain, utwórz obiekt klasy PoemBeautifier i wywołaj kilka razy
