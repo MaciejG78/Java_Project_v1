@@ -22,7 +22,7 @@ public class AppCreateObjectWithAbstractClass {
         System.out.println("\n-------------------------- HourlySalaryEmployee --------------------------");
         processor2.processPayout();
 
-        SalaryPerProductEmployee employeePerProduct = new SalaryPerProductEmployee(150, 25.0);
+        SalaryPerProductEmployee employeePerProduct = new SalaryPerProductEmployee(350, 5.0);
         SalaryPayoutProcessor processor3 = new SalaryPayoutProcessor(employeePerProduct);
         System.out.println("\n-------------------------- SalaryPerProductEmployee --------------------------");
         processor3.processPayout();
