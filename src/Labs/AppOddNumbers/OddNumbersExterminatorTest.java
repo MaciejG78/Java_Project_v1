@@ -1,7 +1,6 @@
 package Labs.AppOddNumbers;
 
 import org.junit.jupiter.api.*;
-import org.junit.platform.commons.logging.LoggerFactory;
 
 import java.util.Arrays;
 import java.util.List;
@@ -10,10 +9,10 @@ import static org.junit.Assert.assertEquals;
 
 class OddNumbersExterminatorTest {
 
-    OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
+    private static OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
 
     @BeforeEach
-    void init(TestInfo testInfo) {
+    void before(TestInfo testInfo) {
         System.out.println("------------- Start: " + testInfo.getDisplayName() + "(" + testInfo.getTestMethod().orElseThrow().getName() + ") ---------------------");
     }
 
